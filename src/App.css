@@ -1,0 +1,1073 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-price {
+  height: 100%;
+  width: 100%;
+  letter-spacing: 1px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  .app-price .app-price-about-toggle {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding: 2em; }
+    .app-price .app-price-about-toggle p {
+      margin-left: 1em;
+      margin-right: 1em;
+      -webkit-text-decoration: bold;
+              text-decoration: bold;
+      font-size: 18px; }
+  .app-price .app-price-about-subCon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: left; }
+    .app-price .app-price-about-subCon .app-price-about-sub-title {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: left;
+      height: 2.5em;
+      margin: 0;
+      padding: 2.5em;
+      color: white;
+      background-color: #0A1237; }
+      .app-price .app-price-about-subCon .app-price-about-sub-title h4 {
+        font-weight: bold;
+        font-size: 24px; }
+    .app-price .app-price-about-subCon .app-price-about-sub {
+      -ms-flex-line-pack: start;
+          align-content: flex-start;
+      border: solid 2px #0A1237;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      width: 100%; }
+    .app-price .app-price-about-subCon .app-price-about-info {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      padding: 1.0em;
+      margin-left: 1em; }
+    .app-price .app-price-about-subCon .app-price-about-info-pricing p {
+      font-size: 16px; }
+    .app-price .app-price-about-subCon .app-price-about-info-detail {
+      margin-top: 1em;
+      padding: 1.0em;
+      margin-left: 1em; }
+      .app-price .app-price-about-subCon .app-price-about-info-detail p {
+        padding: .5em;
+        font-size: 18px; }
+    .app-price .app-price-about-subCon .app-price-about-info-link {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      text-align: center; }
+      .app-price .app-price-about-subCon .app-price-about-info-link a {
+        text-align: center;
+        text-decoration: none;
+        color: #0A1237;
+        border: solid 2px #0A1237;
+        padding: 1.0em;
+        width: 80%; }
+      .app-price .app-price-about-subCon .app-price-about-info-link a:active {
+        background-color: #0A1237;
+        color: white; }
+  .app-price .app-price-img {
+    width: 100%;
+    height: 65vh;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .app-price .app-price-about-title {
+    padding: 2%;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto; }
+    .app-price .app-price-about-title h1 {
+      font-size: 42px; }
+    .app-price .app-price-about-title h4 {
+      font-size: 24px; }
+  .app-price .app-price-about-subCon {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 2%;
+    width: 75%;
+    margin: 0 auto; }
+
+@media only screen and (max-width: 860px) {
+  .app-price > .app-price-about-subCon {
+    -ms-flex-direction: column;
+        flex-direction: column; } }
+
+.payment-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+  .payment-form button {
+    white-space: nowrap;
+    border: 0;
+    outline: 0;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 14px;
+    -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #fff;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    background-color: #6772e5;
+    text-decoration: none;
+    -webkit-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease;
+    margin-top: 10px; }
+  .payment-form form {
+    margin-top: 25vh;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border: 3px solid #e6ebf1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .payment-form input {
+    width: 20vw; }
+  .payment-form input, .payment-form .StripeElement {
+    display: block;
+    margin: 10px 0 20px 0;
+    max-width: 800px;
+    padding: 10px 14px;
+    font-size: 1em;
+    font-family: 'Source Code Pro', monospace;
+    -webkit-box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+            box-shadow: rgba(50, 50, 93, 0.14902) 0px 1px 3px, rgba(0, 0, 0, 0.0196078) 0px 1px 0px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    background: white; }
+  .payment-form input::-webkit-input-placeholder {
+    color: #aab7c4; }
+  .payment-form input:-ms-input-placeholder {
+    color: #aab7c4; }
+  .payment-form input::-ms-input-placeholder {
+    color: #aab7c4; }
+  .payment-form input::placeholder {
+    color: #aab7c4; }
+  .payment-form input:focus,
+  .payment-form .StripeElement--focus {
+    -webkit-box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px, rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+            box-shadow: rgba(50, 50, 93, 0.109804) 0px 4px 6px, rgba(0, 0, 0, 0.0784314) 0px 1px 3px;
+    -webkit-transition: all 150ms ease;
+    -o-transition: all 150ms ease;
+    transition: all 150ms ease; }
+  .payment-form .StripeElement.IdealBankElement,
+  .payment-form .StripeElement.PaymentRequestButton {
+    padding: 0; }
+
+.card-form {
+  margin: 0 auto;
+  max-width: 80vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 5px;
+  font-size: 18px; }
+  .card-form h1 {
+    color: #32325d;
+    font-weight: 400;
+    line-height: 50px;
+    font-size: 40px;
+    margin: 20px 0;
+    padding: 0; }
+  .card-form label {
+    color: #6b7c93;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    width: 40vw; }
+
+.App {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block; }
+
+.App-header-logo {
+  /* animation: App-logo-spin infinite 20s linear; */
+  margin-top: 4%;
+  height: 4em;
+  width: 23em; }
+
+.App-header {
+  background-color: #0A1237;
+  margin-top: 0;
+  height: 6em;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 100%; }
+  .App-header .right-navbar span {
+    color: white; }
+  .App-header .left-navbar {
+    height: 4em;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 1.5em; }
+    .App-header .left-navbar .left-navbar-default {
+      width: 50vw; }
+    .App-header .left-navbar .nav-item {
+      margin-right: 1%;
+      margin-left: 3%;
+      color: white; }
+    .App-header .left-navbar .eureka-dropdown-nav {
+      display: none; }
+      .App-header .left-navbar .eureka-dropdown-nav img {
+        height: 3em;
+        width: 3em; }
+  .App-header #formControlsTextarea {
+    min-width: 100%;
+    max-width: 100%; }
+
+.App-home {
+  height: 100%;
+  width: 100%;
+  letter-spacing: 1px; }
+  .App-home .App-home-img {
+    width: 100%;
+    height: 65vh;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .App-home .App-home-about-title {
+    padding: 2%;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto; }
+    .App-home .App-home-about-title h1 {
+      font-size: 42px; }
+    .App-home .App-home-about-title h4 {
+      font-size: 24px; }
+  .App-home .App-home-about-subCon {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 2%;
+    width: 75%;
+    margin: 0 auto; }
+  .App-home .App-home-about-sub {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+    margin: 0 4% 0 4%;
+    width: 100%; }
+    .App-home .App-home-about-sub img {
+      height: 5em; }
+    .App-home .App-home-about-sub #firstSub {
+      height: 4em;
+      width: 4em;
+      margin-bottom: 1em; }
+    .App-home .App-home-about-sub h4 {
+      font-size: 22px;
+      margin-top: 4%;
+      font-weight: bold; }
+    .App-home .App-home-about-sub p {
+      font-size: 18px;
+      padding: 5%; }
+  .App-home .App-home-about-start {
+    margin: 0 auto;
+    width: 14em;
+    margin-bottom: 3em; }
+    .App-home .App-home-about-start button {
+      background-color: #172B69;
+      padding: 1em; }
+    .App-home .App-home-about-start a {
+      color: white;
+      font-size: 20px; }
+  .App-home .App-home-feed {
+    background-color: #0a1237;
+    color: white;
+    height: 40em; }
+    .App-home .App-home-feed .App-home-feed-info {
+      padding: 3%;
+      height: 18em;
+      width: 75%;
+      display: inline-block; }
+    .App-home .App-home-feed .App-home-feed-subCon {
+      width: 50%;
+      margin-top: 2%;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      padding: 2%; }
+    .App-home .App-home-feed .App-home-feed-sub {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: center;
+      width: 40%;
+      opacity: 0.5; }
+      .App-home .App-home-feed .App-home-feed-sub img {
+        height: 6em;
+        width: 6em;
+        border-radius: 50%;
+        margin-top: 2%; }
+      .App-home .App-home-feed .App-home-feed-sub p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 18px; }
+    .App-home .App-home-feed .App-home-feed-sub-selected {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: center;
+      width: 40%;
+      opacity: 1; }
+      .App-home .App-home-feed .App-home-feed-sub-selected img {
+        height: 6em;
+        width: 6em;
+        border-radius: 50%;
+        margin-top: 2%; }
+      .App-home .App-home-feed .App-home-feed-sub-selected p {
+        margin: 0;
+        font-weight: bold;
+        font-size: 18px; }
+    .App-home .App-home-feed .App-home-feed-sub:active {
+      opacity: 1; }
+    .App-home .App-home-feed .App-home-feed-sub:hover {
+      opacity: 1; }
+
+.App-Cust .App-Cust-imgCont h2 {
+  position: absolute;
+  top: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  color: white; }
+
+.App-Cust .App-Cust-imgCont .App-Cust-img {
+  width: 100%;
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%) sepia(100%) hue-rotate(185deg) brightness(50%);
+          filter: grayscale(100%) sepia(100%) hue-rotate(185deg) brightness(50%); }
+
+.App-Cust .App-cust-feedback {
+  margin-bottom: 3em; }
+  .App-Cust .App-cust-feedback .App-cust-feedback-nav {
+    border-bottom: lightgrey solid 1px;
+    height: 3em;
+    padding-top: .75em; }
+    .App-Cust .App-cust-feedback .App-cust-feedback-nav .App-cust-feedback-nav-item {
+      margin: 3.5em;
+      color: black;
+      text-decoration: none;
+      font-size: 16px; }
+    .App-Cust .App-cust-feedback .App-cust-feedback-nav .App-cust-feedback-nav-item:focus {
+      font-weight: bold; }
+  .App-Cust .App-cust-feedback .App-cust-feedback-wireframe {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: center;
+    margin-top: 3em;
+    background-color: #172B69; }
+    .App-Cust .App-cust-feedback .App-cust-feedback-wireframe .App-cust-feedback-wireframe-text {
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+      height: auto; }
+      .App-Cust .App-cust-feedback .App-cust-feedback-wireframe .App-cust-feedback-wireframe-text h3 {
+        color: white;
+        font-weight: bold;
+        margin: 0 auto;
+        font-size: 18px;
+        width: 30vw;
+        padding: 3em; }
+    .App-Cust .App-cust-feedback .App-cust-feedback-wireframe .App-cust-feedback-wireframe-img {
+      -ms-flex: 1 1;
+          flex: 1 1; }
+      .App-Cust .App-cust-feedback .App-cust-feedback-wireframe .App-cust-feedback-wireframe-img img {
+        width: 70vw;
+        vertical-align: top;
+        -o-object-fit: cover;
+           object-fit: cover;
+        height: 75vh; }
+
+.App-Cust .App-cust-img-feedback {
+  max-width: 110px;
+  max-height: 90px;
+  width: auto;
+  height: auto; }
+
+.App-Cust .App-cust-feedback-info {
+  position: relative;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 5em;
+  margin-bottom: 4em; }
+  .App-Cust .App-cust-feedback-info .slick-prev:before,
+  .App-Cust .App-cust-feedback-info .slick-next:before {
+    color: #0A1237; }
+  .App-Cust .App-cust-feedback-info .slick-prev, .App-Cust .App-cust-feedback-info .slick-next {
+    position: absolute;
+    top: 50%; }
+  .App-Cust .App-cust-feedback-info .slick-prev {
+    left: 3% !important;
+    z-index: 1; }
+  .App-Cust .App-cust-feedback-info .slick-next {
+    right: 3% !important;
+    z-index: 1; }
+  .App-Cust .App-cust-feedback-info .App-cust-feedback-comments {
+    width: 80%; }
+    .App-Cust .App-cust-feedback-info .App-cust-feedback-comments h3 {
+      font-size: 22px;
+      width: 75%;
+      margin: 0 auto; }
+    .App-Cust .App-cust-feedback-info .App-cust-feedback-comments .App-cust-feedback-comments-source {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      text-align: center;
+      width: 15%;
+      margin: 0 auto; }
+      .App-Cust .App-cust-feedback-info .App-cust-feedback-comments .App-cust-feedback-comments-source h4 {
+        margin-left: 1em; }
+
+.App-About .App-About-imgCont h2 {
+  position: absolute;
+  top: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  color: white; }
+
+.App-About .App-About-imgCont .App-About-img {
+  width: 100%;
+  height: 65vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(100%) sepia(100%) hue-rotate(185deg) brightness(50%);
+          filter: grayscale(100%) sepia(100%) hue-rotate(185deg) brightness(50%); }
+
+.App-About .App-About-Tabs .App-about-nav {
+  border-bottom: lightgrey solid 1px;
+  height: 3em;
+  padding-top: .75em; }
+  .App-About .App-About-Tabs .App-about-nav .App-about-nav-item {
+    margin: 3.5em;
+    color: black;
+    text-decoration: none;
+    font-size: 16px; }
+  .App-About .App-About-Tabs .App-about-nav .App-about-nav-item:focus {
+    font-weight: bold; }
+
+.App-About .App-About-Tabs-Eureka-Comapny {
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  text-align: center; }
+  .App-About .App-About-Tabs-Eureka-Comapny .App-About-Tabs-Eureka-Company-Info {
+    width: 40%;
+    padding: 1em;
+    margin: 0 auto; }
+
+.App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Title h1 {
+  width: 75vw;
+  margin: 0 auto;
+  margin-top: 2em; }
+
+.App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg {
+  width: 100%;
+  padding: 2em;
+  color: black;
+  width: 95vw;
+  margin: 0 auto;
+  margin-top: 6em; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-decoration: underline; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg p {
+    font-size: 22px; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg h3 {
+    font-size: 26px; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Shrt {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    text-align: center;
+    width: 90vw;
+    margin: 0 auto; }
+    .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Shrt .App-About-Tabs-Careers-Msg-Desc {
+      padding: 2em;
+      margin: 0 auto; }
+    .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Shrt .App-About-Tabs-Careers-Msg-Desc1 {
+      -ms-flex: 4 1;
+          flex: 4 1; }
+    .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Shrt .App-About-Tabs-Careers-Msg-Desc2 {
+      -ms-flex: 4 1;
+          flex: 4 1; }
+    .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Shrt .App-About-Tabs-Careers-Msg-Desc3 {
+      -ms-flex: 2 1;
+          flex: 2 1; }
+    .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Shrt .App-About-Tabs-Careers-Msg-Desc4 {
+      -ms-flex: 2 1;
+          flex: 2 1; }
+    .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Shrt .App-About-Tabs-Careers-Msg-Desc5 {
+      -ms-flex: 2 1;
+          flex: 2 1; }
+
+.App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Openings {
+  padding: 2em; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Openings h3 {
+    font-size: 2em;
+    font-weight: bold;
+    text-decoration: underline; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Openings h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Openings .App-About-Tabs-Careers-Openings-Positions {
+    width: 45%;
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Openings .App-About-Tabs-Careers-Openings-Positions .App-About-Tabs-Careers-Openings-Positions-Descriptions h4 {
+      font-weight: bold; }
+    .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Openings .App-About-Tabs-Careers-Openings-Positions .App-About-Tabs-Careers-Openings-Positions-Descriptions ul {
+      text-align: left; }
+
+.App-About .App-About-formControl {
+  width: 50vw;
+  margin: 0 auto; }
+  .App-About .App-About-formControl p {
+    font-size: 16px;
+    margin: 2em; }
+  .App-About .App-About-formControl .App-About-formControl-feedback {
+    margin: 1em; }
+
+.App-About .App-About-Tabs-Eureka-Team h3 {
+  text-decoration: underline; }
+
+.App-About .App-About-Tabs-Eureka-Team .App-About-Tabs-Eureka-Team-Roster {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  text-align: center; }
+  .App-About .App-About-Tabs-Eureka-Team .App-About-Tabs-Eureka-Team-Roster .App-About-Tabs-Eureka-Team-Row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    text-align: center;
+    margin: .5em; }
+    .App-About .App-About-Tabs-Eureka-Team .App-About-Tabs-Eureka-Team-Roster .App-About-Tabs-Eureka-Team-Row .App-About-Tabs-Eureka-Team-Profile {
+      margin: 3em; }
+      .App-About .App-About-Tabs-Eureka-Team .App-About-Tabs-Eureka-Team-Roster .App-About-Tabs-Eureka-Team-Row .App-About-Tabs-Eureka-Team-Profile .App-About-Profile:hover {
+        opacity: 1; }
+      .App-About .App-About-Tabs-Eureka-Team .App-About-Tabs-Eureka-Team-Roster .App-About-Tabs-Eureka-Team-Row .App-About-Tabs-Eureka-Team-Profile .App-About-Profile {
+        width: 10em;
+        height: 10em;
+        opacity: .55; }
+
+.App-footer {
+  background-color: white;
+  display: -ms-flexbox;
+  display: flex;
+  width: 45em;
+  margin: 0 auto;
+  height: 10em;
+  padding-top: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em; }
+  .App-footer .left-footer {
+    font-size: 18px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    width: 75vw; }
+    .App-footer .left-footer h5 {
+      font-size: 20px;
+      font-weight: bold;
+      font-variant: small-caps; }
+    .App-footer .left-footer a {
+      font-size: 16px;
+      color: #172B69; }
+    .App-footer .left-footer .right-footer {
+      width: 40%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: center;
+      width: 20vw; }
+      .App-footer .left-footer .right-footer img {
+        width: 12em; }
+      .App-footer .left-footer .right-footer p {
+        font-size: 14px;
+        margin: 0; }
+      .App-footer .left-footer .right-footer span {
+        color: white; }
+    .App-footer .left-footer .footer-nav {
+      width: 5.5em;
+      margin-left: 2.25em;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      text-align: center; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+.App-Map {
+  display: -ms-flexbox;
+  display: flex; }
+
+#sidebar {
+  text-align: left;
+  font-family: 'Franklin Gothic Medium';
+  padding: 10px 15px 0 15px;
+  width: 20%; }
+
+.App-Neighborhood {
+  font-size: 1.1em; }
+  .App-Neighborhood h3 {
+    color: #0A1237; }
+  .App-Neighborhood h2 {
+    font-weight: bold;
+    font-size: 1.2em; }
+  .App-Neighborhood hr {
+    color: black; }
+  .App-Neighborhood .sideTitle {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16px; }
+  .App-Neighborhood .tool-tip {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .App-Neighborhood .sideInfo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; }
+    .App-Neighborhood .sideInfo .help-tip {
+      background-color: RGB(128, 128, 128);
+      height: 10px;
+      width: 10px;
+      font-size: 7px;
+      line-height: 10px; }
+
+.App-Property {
+  font-size: 1.1em; }
+  .App-Property h3 {
+    color: #0A1237; }
+  .App-Property h2 {
+    font-weight: bold;
+    font-size: 1.2em; }
+  .App-Property .sideTitle {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 16px; }
+  .App-Property .tool-tip {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .App-Property .sideInfo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; }
+    .App-Property .sideInfo .help-tip {
+      background-color: RGB(128, 128, 128);
+      height: 10px;
+      width: 10px;
+      font-size: 7px;
+      line-height: 10px; }
+
+#map {
+  position: relative;
+  height: 92vh;
+  width: 80%; }
+
+.lrTitle {
+  text-align: center;
+  font-weight: bold; }
+
+.btn-warning {
+  width: 20%; }
+
+.status {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-decoration-color: maroon;
+          text-decoration-color: maroon; }
+
+/* Google maps search bar css */
+#description {
+  font-family: 'Franklin Gothic Medium';
+  font-size: 15px;
+  font-weight: 300; }
+
+#infowindow-content .title {
+  font-weight: bold; }
+
+#infowindow-content {
+  display: none; }
+
+#map #infowindow-content {
+  display: inline; }
+
+.pac-card {
+  border-radius: 2px 0 0 2px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  margin-top: 10px;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  font-family: 'Franklin Gothic Medium';
+  padding-top: 0.3%;
+  width: 70%;
+  height: 5em;
+  -ms-flex-align: baseline;
+      align-items: baseline; }
+
+#pac-container {
+  padding-bottom: 4.5%;
+  margin-right: 12px; }
+
+.mapToggle {
+  margin-left: 3%;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  padding-top: .75%;
+  width: 40%;
+  height: 5%; }
+  .mapToggle p {
+    padding: 1% 5% 5% 5%;
+    font-size: 14px; }
+  .mapToggle .react-toggle-thumb {
+    background-color: #e8a93f; }
+
+#bedsCtrl {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  padding-top: .75%;
+  height: 5%; }
+  #bedsCtrl p {
+    padding: 2% 2% 0 0;
+    font-size: 18px; }
+
+#pac-input {
+  background: url(https://png.icons8.com/search) no-repeat scroll right;
+  background-color: #F7F7F7;
+  background-size: 8%;
+  border: none;
+  font-family: 'Roboto';
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 3%;
+  margin-top: 1%;
+  padding: 0 11px 0 13px;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  float: left;
+  width: 25%;
+  height: 100%; }
+
+#pac-input:focus {
+  border-color: #4d90fe; }
+
+/* Legend bar color and styling */
+.legend {
+  border-radius: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.45em;
+  margin-left: 2.5%;
+  width: 10em;
+  cursor: help; }
+  .legend #titleRank {
+    background-color: #020202; }
+    .legend #titleRank span {
+      border-bottom-style: dotted;
+      padding-bottom: 1px; }
+  .legend #topRank {
+    background-color: #3cba54; }
+  .legend #midTopRank {
+    background-color: #f4c20d; }
+  .legend #midBotRank {
+    background-color: #4885ed; }
+  .legend #botRank {
+    background-color: #db3236; }
+
+@media only screen and (max-width: 860px) {
+  .App-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 5em;
+    width: 100%; }
+    .App-header .App-header-logo {
+      display: none; }
+    .App-header .left-navbar {
+      padding-top: 1.25%; }
+      .App-header .left-navbar .left-navbar-default {
+        display: none; }
+      .App-header .left-navbar .eureka-dropdown-nav {
+        display: -ms-flexbox;
+        display: flex; }
+        .App-header .left-navbar .eureka-dropdown-nav .nav-item-drop {
+          padding: 15px;
+          display: inline-block;
+          line-height: 20px; }
+  .App-home .App-home-about-subCon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center; }
+  .App-home .App-home-feed-subCon {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+    margin-bottom: 2em; }
+  .App-home .App-home-about-sub {
+    width: 100%; }
+  .App-home .App-home-feed {
+    height: 100%; }
+    .App-home .App-home-feed .App-home-feed-info {
+      width: 100%;
+      display: block;
+      height: 33em; }
+  .App-Cust .App-Cust-imgCont h2 {
+    position: absolute;
+    left: 10%;
+    color: white; }
+  .App-Cust .App-cust-img-feedback {
+    max-width: 110px;
+    max-height: 90px;
+    width: auto;
+    height: auto; }
+  .App-Cust .App-cust-feedback-wireframe {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; }
+    .App-Cust .App-cust-feedback-wireframe .App-cust-feedback-wireframe-text h3 {
+      width: 50vw; }
+    .App-Cust .App-cust-feedback-wireframe .App-cust-feedback-wireframe-img {
+      width: 100%; }
+      .App-Cust .App-cust-feedback-wireframe .App-cust-feedback-wireframe-img img {
+        width: 100%; }
+  .App-Cust .App-cust-feedback-info {
+    width: 95%; }
+  .App-Cust .App-cust-feedback-comments {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: .5em; }
+    .App-Cust .App-cust-feedback-comments h4 {
+      font-size: 16px; }
+  .slick-slide slick-active slick-center slick-current {
+    width: 80%; }
+  .App-About .App-About-imgCont h2 {
+    position: absolute;
+    left: 10%;
+    color: white; }
+  .App-About .App-About-Tabs-Eureka-Comapny {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+    margin: 0 auto; }
+    .App-About .App-About-Tabs-Eureka-Comapny .App-About-Tabs-Eureka-Company-Info {
+      width: 75vw;
+      margin: 0 auto; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Shrt {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+    width: 75vw; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Desc {
+    width: 15em;
+    margin: 0 auto; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Desc1 {
+    -ms-flex: 1 1;
+        flex: 1 1; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Desc2 {
+    -ms-flex: 1 1;
+        flex: 1 1; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Desc3 {
+    -ms-flex: 1 1;
+        flex: 1 1; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Desc4 {
+    -ms-flex: 1 1;
+        flex: 1 1; }
+  .App-About .App-About-Tabs-Careers .App-About-Tabs-Careers-Msg .App-About-Tabs-Careers-Msg-Desc5 {
+    -ms-flex: 1 1;
+        flex: 1 1; }
+  .App-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    text-align: center;
+    width: 45vw; }
+    .App-footer .left-footer {
+      width: 100%;
+      margin: 0 auto;
+      display: block; }
+      .App-footer .left-footer .footer-nav {
+        width: 50%;
+        margin: 0 auto; }
+    .App-footer .right-footer {
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+      margin-top: 6%; }
+      .App-footer .right-footer img {
+        width: 14em; } }
+
+.__react_component_tooltip {
+  pointer-events: auto !important; }
